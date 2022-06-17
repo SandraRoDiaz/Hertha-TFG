@@ -1,0 +1,101 @@
+.list-container {
+    height: calc(100% - 27px); 
+    background-color: #f2f5f9;
+    position: relative;
+}
+
+
+
+.list {
+    
+    margin:auto;
+    height: 100%;
+    overflow: auto;
+    padding: 30px 25px 0px 25px;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+
+.blocked {
+    background-color: #0e547a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.blocked::after {
+    content: "Cargando más proyectos...";
+    color: white;
+}
+
+.list > * {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.list > :last-child{
+    margin-bottom:0;
+}
+
+.fields{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.field-name{
+    border: 1px solid red; 
+    border-radius:10px;
+    padding:4px;
+    margin-right: 4px;
+}
+
+.alert-container{
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size:22px;
+}
+
+.alert-container :first-child{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.alert-container > div > i {
+    margin-left: 12px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    .list-container{
+        background-color: #0e547a;
+        height: cacl(100% - 86px);
+        padding: 3px 12px 0 12px;
+    }
+   .list{
+       height: 100%;
+       overflow: auto;
+       padding:12px 0 15px 0;
+   }  
+
+   .alert-container{
+       color: #ffff
+   }
+  }

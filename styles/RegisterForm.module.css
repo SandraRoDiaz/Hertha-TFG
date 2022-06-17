@@ -1,0 +1,101 @@
+.form{
+    max-width: 35%;
+    padding:40px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0 ,0 ,0 , 0.25);
+}
+.title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+.label{
+    margin: 12px 0 12px 0;
+    color: rgba(32, 32, 32, 0.8) 
+}
+
+.input{
+    height: 32px;
+    outline: none;
+    width: 100%;
+    border-top-style: none;
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom:1px solid rgba(32, 32, 32, 0.8) ; 
+    
+}
+
+.input:focus {
+    border-bottom:2px solid #0e547a; 
+}
+
+.password-container{
+    position: relative;
+    display: flex;
+    color: rgba(0 ,0 ,0 , 0.25)
+}
+
+.toggle{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.validation{
+    color: #de4343;
+}
+
+.signup{
+    margin: 60px 0 0 0;
+    width:100%;
+    border-radius:25px;
+    padding:5px;
+    font-size: 20px;
+    background-color:rgba(247, 147, 75, 0.85);
+    border:none;
+
+}
+
+.pulse-anim {
+    animation: pulse-wave 2s infinite;
+}
+.pulse-anim:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse-wave {
+    0% {
+        box-shadow: 0 0 0 0 #f59752;
+    }
+    70% {
+        box-shadow: 0 0 0 15px transparent;
+    }
+}
+
+.signup:hover {
+    background-color:#f59752;
+}
+
+.checkbox {
+    font-weight: bold;
+}
+
+.checkbox:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px){
+    .form {
+      max-width: 50%;
+    }  
+  }
+@media screen and (max-width: 600px){
+    .form {
+      max-width: 80%;
+    }  
+  }
+
+
+

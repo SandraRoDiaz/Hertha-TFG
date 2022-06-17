@@ -1,0 +1,30 @@
+.button {
+    cursor:pointer;
+    font-size:25px;
+    color:rgb(41, 192, 142);
+}
+
+.remove {
+    cursor: pointer;
+    color:grey;
+}
+
+.remove:hover {
+    color:red;
+}
+
+.tasks {
+    margin-top:15px;
+}
+
+.clean-button {
+    width:110px;
+    color:red;
+}
+.clean-button:hover{
+    color:rgb(97, 4, 4);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+   

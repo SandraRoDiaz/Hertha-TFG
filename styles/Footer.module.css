@@ -1,0 +1,15 @@
+.footer{
+    display:flex;
+    padding:7px;
+    background-color: hsla(201, 79%, 27%, 0.5);
+    color:#000000;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+    height: 40px;
+    width:100%;
+}
+
+.footer> *{
+    margin:auto;
+}

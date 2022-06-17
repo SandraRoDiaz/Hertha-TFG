@@ -1,0 +1,106 @@
+.filter-container{
+    position:absolute;
+    z-index:6;
+    background-color: #f59752;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top:48px;
+    width:inherit;  
+}
+
+.wrapper{
+    width: 90%;
+}
+
+.wrapper > * {
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    margin: 0 0 5px;
+}
+
+.lupa{
+    width:80px;
+    height:35px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+}
+
+.lupa:hover{
+    background-color: #0e547a;
+    color: #fff;
+}
+
+.icon{
+    width:50px;
+    background-color: transparent;
+    border:none;
+    margin-left:10px;
+}
+
+.icon:hover{
+    color: #f2e9de;
+}
+
+
+.input{
+    padding: 5px;
+}
+
+
+.toggle{
+    background-color: #f59752;
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius: 50%;
+    z-index: 6;
+    right: 50px;
+    bottom:50px;
+}
+
+@media screen and (max-width: 600px){
+
+.filter-container{
+    top:0;
+}
+
+.toggle{
+    width:70px;
+    height:70px;
+}
+
+.toggle >i {
+    font-size: 20px;
+}
+
+
+.buttons{
+    margin-top:3px;
+    display: flex;
+    height:35px;
+    width:100px;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons > button:last-child{
+    background-color: transparent;
+}
+}
+

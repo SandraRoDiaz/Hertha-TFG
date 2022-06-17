@@ -1,0 +1,43 @@
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:7px;
+    background-color: #0e547a;
+}
+
+.topbar > * {
+    margin: 0 24px 0 0;
+}
+
+.topbar > div:first-child{
+ color: #f1f1f1;
+}
+
+.close-session{
+    background-color: #f59752;
+    border-radius: 5px;
+    padding:5px 25px;
+    color: #f1f1f1;
+    cursor:pointer;
+}
+
+.close-session:hover{
+    background-color: #f6893c;
+}
+
+
+@media screen and (max-width: 600px){
+    .topbar {
+      padding: 15px;
+      color:#f1f1f1;
+    }  
+
+    .logo{
+        position: absolute;
+
+        left:7px;
+        top:7px;
+        height: 60px;
+    }
+  }

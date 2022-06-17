@@ -1,0 +1,89 @@
+.form{
+    width:98%;
+    margin: 15px auto;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 0 7px rgba(32, 32, 32, 0.25);
+}
+
+.description {
+    resize: none;
+}
+
+.create {
+    padding: 8px 32px;
+    background-color: #f59752;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(183, 183, 183);
+}
+
+.create:hover{
+    background-color: #f6893c;
+}
+
+.button-container {
+    position: fixed;
+    width:25.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.validation{
+    color:red;
+}
+
+.input{
+    margin-bottom: 15px;
+}
+
+.line{
+    margin: 45px 0 45px 0;
+}
+
+.required-field {
+    color: red;
+    font-weight: bold;
+}
+
+.cancel-button {
+background-color: white;
+padding: 8px 22px;
+border-radius: 0.25rem;
+border: 1px solid rgb(183, 183, 183);
+margin-right:20px;
+}
+
+.cancel-button:hover {
+    background-color: #f2e9de;
+}
+
+.link{
+    display:block;
+    overflow: auto;
+}
+
+.links {
+    padding: 5px 5px;
+}
+
+.contact-info{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    .form{
+        width:85%;
+        margin: 15px auto;
+    }
+
+    .form-container{
+        height: calc(100vh - 130px);
+        overflow: auto;
+    }
+
+  .button-container{
+      position:relative;
+      justify-content:space-between;
+  }
+  }
